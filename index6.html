@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài6</title>
+</head>
+<body>
+<script>
+    let sale = parseFloat(prompt('Nhập doanh số (đơn vị triệu đồng):'));
+    let commisionRate;
+    if (sale > 400) {
+        commisionRate = 0.085;
+    } else if (sale > 240) {
+        commisionRate = 0.07;
+    } else if (sale > 160) {
+        commisionRate = 0.055;
+    } else if (sale > 80) {
+        commisionRate = 0.04;
+    } else {
+        commisionRate = 0.025;
+    }
+    let commission = sale * commisionRate;
+    let message = 'Mức hoa hồng là ' + (commisionRate * 100) + '% của '
+        + sale + ' triệu đồng. Bằng ' + commission.toFixed(2) + ' triệu đồng';
+    alert(message);
+
+</script>
+</body>
+</html>

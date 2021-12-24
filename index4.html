@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<script>
+    // Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó
+    let a = parseInt(prompt('Nhập số nguyên a:'));
+    let b = parseInt(prompt('Nhập số nguyên b:'));
+    let c = parseInt(prompt('Nhập số nguyên c:'));
+    let max;
+    if (a > b) {
+        max = (a > c) ? a : c;
+    } else {
+        max = (b > c) ? b : c;
+    }
+    alert('Max là: '+max);
+
+</script>
+</body>
+</html>
